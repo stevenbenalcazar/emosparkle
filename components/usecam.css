@@ -1,0 +1,75 @@
+.usecam-usecam {
+  width: 350px;
+  height: 70px;
+  display: flex;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.usecam-rectangle1 {
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 70px;
+  position: absolute;
+  border-radius: 40px;
+}
+.usecam-text {
+  top: 8px;
+  left: 28px;
+  color: rgba(255, 255, 255, 1);
+  width: 294px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  font-family: Nunito;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.usecam-group4 {
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 70px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  flex-shrink: 1;
+  background-color: rgba(121, 51, 174, 1);
+}
+.usecam-text2 {
+  top: 8px;
+  left: 28px;
+  color: rgba(255, 255, 255, 1);
+  width: 294px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  font-family: Nunito;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.usecam-root-class-name {
+  top: 406px;
+  left: 0px;
+  position: absolute;
+}
+@media(max-width: 390px) {
+  .usecam-group4 {
+    top: -7px;
+    right: -48px;
+  }
+  .usecam-text2 {
+    right: -66px;
+    bottom: 0px;
+  }
+}

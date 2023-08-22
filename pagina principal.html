@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmoSparkle</title>
+    <style>
+        /* Estilo del cuerpo y fondo de la página */
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Estilo del título y botón */
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px; /* Aumenta la separación entre el título y el botón */
+            color: #333;
+            text-align: center;
+        }
+
+        .start-button {
+            padding: 12px 24px;
+            font-size: 24px;
+            background-color: #ffc107;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Estilo para el botón al pasar el cursor sobre él */
+        .start-button:hover {
+            background-color: #e0a800;
+        }
+
+        /* Estilo para el video de fondo */
+        #background-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+
+        /* Estilo para el contenedor del contenido */
+        .container {
+            z-index: 1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <video id="background-video" autoplay loop muted>
+        <source src="animacion.mp4" type="video/mp4"> <!-- Agrega la ruta a tu video MP4 -->
+    </video>
+    <div class="container">
+        <h1 class="title">EmoSparkle</h1>
+        <a href="pagina.html" class="start-button">Comenzar</a>
+    </div>
+</body>
+</html>

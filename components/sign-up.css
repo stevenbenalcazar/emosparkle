@@ -1,0 +1,13 @@
+.sign-up-sign-up {
+  width: 263px;
+  height: 29px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.sign-up-root-class-name {
+  top: 70px;
+  left: 147px;
+  position: absolute;
+}

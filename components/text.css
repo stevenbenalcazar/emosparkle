@@ -1,0 +1,18 @@
+.text-container {
+  display: flex;
+  position: relative;
+}
+.text-text {
+  color: rgba(0, 0, 0, 1);
+  width: 40px;
+  height: auto;
+  position: relative;
+  font-size: 35px;
+  font-style: Solid;
+  text-align: center;
+  font-family: Font Awesome 6 Free;
+  font-weight: 400;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Emociones para Niños</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        header {
+            background-color: #ffb400;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        form {
+            text-align: left;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        input[type="text"],
+        input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #ffb400;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Test de Emociones para Niños</h1>
+    </header>
+
+    <main>
+        <form>
+            <label>Nombre Completo:</label>
+            <input type="text" name="nombre-completo" required>
+
+            <label>Curso:</label>
+            <input type="text" name="curso" required>
+
+            <label>Edad:</label>
+            <input type="number" name="edad" required>
+
+            <label>1. ¿Cómo te sientes hoy?</label>
+            <br>
+            <input type="radio" name="emocion" value="feliz"> Feliz
+            <input type="radio" name="emocion" value="triste"> Triste
+            <input type="radio" name="emocion" value="enojado"> Enojado
+            <input type="radio" name="emocion" value="asustado"> Asustado
+            <input type="radio" name="emocion" value="emocionado"> Emocionado
+
+            <label>2. ¿Qué te hace sentir mejor cuando estás triste?</label>
+            <input type="text" name="solucion-tristeza">
+
+            <label>3. ¿Qué te hace reír?</label>
+            <input type="text" name="cosas-graciosas">
+
+            <label>4. ¿Cuál es tu color favorito?</label>
+            <input type="text" name="color-favorito">
+
+            <label>5. ¿Qué actividad te gusta hacer cuando estás feliz?</label>
+            <input type="text" name="actividad-feliz">
+
+            <label>6. ¿Cómo te sientes cuando estás rodeado de amigos?</label>
+            <br>
+            <input type="radio" name="emocion-amigos" value="feliz"> Feliz
+            <input type="radio" name="emocion-amigos" value="nervioso"> Nervioso
+            <input type="radio" name="emocion-amigos" value="emocionado"> Emocionado
+            <input type="radio" name="emocion-amigos" value="triste"> Triste
+
+        </form>
+        <button type="submit">Enviar</button>
+        <p>Una vez completado el test, puedes descargar tus respuestas como un archivo PDF.</p>
+        <button onclick="downloadPDF()">Descargar como PDF</button>
+    </main>
+
+    <script>
+        function downloadPDF() {
+            const html = document.documentElement.outerHTML;
+            const blob = new Blob([html], { type: 'application/pdf' });
+            const url = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = 'TestEmociones.pdf';
+            link.click();
+        }
+    </script>
+</body>
+</html>

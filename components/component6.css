@@ -1,0 +1,54 @@
+.component6-container {
+  width: 350px;
+  height: 70px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+.component6-rectangle1 {
+  top: 0px;
+  left: 0px;
+  width: 350px;
+  height: 70px;
+  position: absolute;
+  border-radius: 40px;
+}
+.component6-text {
+  top: 8px;
+  left: 28px;
+  color: rgba(255, 255, 255, 1);
+  width: 294px;
+  height: auto;
+  position: absolute;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  font-family: Nunito;
+  font-weight: 800;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.component6-root-class-name {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+@media(max-width: 390px) {
+  .component6-rectangle1 {
+    top: 0px;
+    left: 0px;
+  }
+  .component6-text {
+    top: 8px;
+    left: 28px;
+    color: rgb(255, 255, 255);
+    font-size: 38px;
+    box-shadow: rgb(212, 212, 212) 5px 5px 10px 0px;
+    font-style: italic;
+    font-family: Nunito;
+    font-weight: 800;
+    line-height: normal;
+    text-decoration: none;
+  }
+}
